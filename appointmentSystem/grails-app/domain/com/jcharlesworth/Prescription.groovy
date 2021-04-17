@@ -11,5 +11,14 @@ class Prescription {
 	String patientPaying
 
     static constraints = {
+
+// Constraints 
+	pharmacyName Blank:false
+	prescriptionNumber blank:false, unique:false
+	medicine blank:false 
+	totalCost blank:false
+	dateIssued blank:false
+	
+
     }
 }

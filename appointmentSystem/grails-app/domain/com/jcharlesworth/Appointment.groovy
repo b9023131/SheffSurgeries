@@ -9,5 +9,12 @@ class Appointment {
 	int roomNumber 
 
     static constraints = {
+
+// Constraints 
+	appDate blank:false
+	//appTime 
+	//appDuration
+	roomNumber blank:false
+
     }
 }

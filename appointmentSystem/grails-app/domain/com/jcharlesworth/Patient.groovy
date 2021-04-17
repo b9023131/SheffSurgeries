@@ -12,5 +12,14 @@ class Patient {
 	int patientPhone	
 
     static constraints = {
+
+// Constraints
+	patientName blank:false
+	patientAddress blank:false
+	patientResidence blank:false
+	patientDob blank:false
+	patientID blank:false, unique:false 
+	dateRegistered blank:false
+	patientPhone blank:false
     }
 }
