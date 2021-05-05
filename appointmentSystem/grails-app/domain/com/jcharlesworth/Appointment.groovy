@@ -15,6 +15,10 @@ class Appointment {
 	//appTime 
 	//appDuration
 	roomNumber blank:false
-
     }
+
+//Relationships
+static belongsTo = [doctor:Doctor]
+static hasOne = [patient:Patient]
+static hasMany = [surgery:Surgery]
 }

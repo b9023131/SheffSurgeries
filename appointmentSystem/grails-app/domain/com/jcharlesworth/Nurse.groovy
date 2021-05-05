@@ -19,8 +19,12 @@ class Nurse {
 	nursePhone blank:false
 	bio size:10..50
 
-// Relationship
-
 
     }
+
+// Relationship
+static belongsTo = [surgery:Surgery]
+static hasMany = [doctor:Doctor]
+static hasOne = []
+
 }

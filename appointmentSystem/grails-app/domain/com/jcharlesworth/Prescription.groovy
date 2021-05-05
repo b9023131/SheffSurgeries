@@ -4,7 +4,7 @@ class Prescription {
 
 // Declaring Variables
 	String pharmacyName
-	int prescripNumber
+	int prescriptionNumber
 	String medicine
 	int totalCost
 	Date dateIssued
@@ -21,4 +21,8 @@ class Prescription {
 	
 
     }
+//relationships
+static hasMany = []
+static belongsTo = []
+static hasOne = [doctor:Doctor, patient:Patient]
 }

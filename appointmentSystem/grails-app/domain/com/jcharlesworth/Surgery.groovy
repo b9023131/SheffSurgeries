@@ -22,9 +22,10 @@ class Surgery {
 	description size:5..25
 	openingTime blank: false
 
-// Relationship
-//static belongsTo = []
-//static hasMany = [receptionists:Receptionist, doctors:Doctor, nurses:Nurse]
-
     }
+
+// Relationship
+static belongsTo = []
+static hasMany = [doctor:Doctor, nurse:Nurse, receptionist:Receptionist, patient:Patient, appointment:Appointment]
+static hasOne = [] 
 }

@@ -14,4 +14,9 @@ class Receptionist {
 
 	
     }
+//relationships
+static belongsTo = [surgery:Surgery]
+static hasMany = []
+static hasOne = [] 
+
 }
