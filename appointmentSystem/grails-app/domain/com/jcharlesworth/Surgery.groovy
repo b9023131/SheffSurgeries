@@ -5,27 +5,27 @@ class Surgery {
 // Declaring variables
 	String name 
 	String address
-	int postcode
-	int telephone
+	String postcode
+	String telephone
 	int numberOfPatients
 	String description
 	String openingTime 
-
+	
+	
     static constraints = {
 
 // Constraints 
 	name size:5..30, blank:false, unique:true
-	address blank:false 
-	postcode blank:false 
+	address blank: false 
+	postcode blank: false 
 	telephone blank: false 
-	numberOfPatients blank:false
-	description size:5..25
-	openingTime blank: false
+	numberOfPatients: false
+	description size: 5..100
+	
+   }
 
-    }
-
-// Relationship
-static belongsTo = []
-static hasMany = [doctor:Doctor, nurse:Nurse, receptionist:Receptionist, patient:Patient, appointment:Appointment]
-static hasOne = [] 
+//Class Diagram Relationships
+	//static belongsTo = []
+	//static hasMany = [doctor:Doctor, nurse:Nurse, receptionist:Receptionist, patient:Patient, 		appointment:Appointment]
+	//static hasOne = [] 
 }

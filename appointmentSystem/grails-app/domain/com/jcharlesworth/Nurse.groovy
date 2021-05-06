@@ -7,24 +7,23 @@ class Nurse {
 	String qualifications
 	String nurseEmail
 	String nurseOffice
-	int nursePhone 
+	String nursePhone 
 	String bio
 
     static constraints = {
 
 // Constraints 
-	nurseName blank:false 
-	nurseEmail blank:false
-	nurseOffice blank:false
-	nursePhone blank:false
-	bio size:10..50
-
+	nurseName blank: false 
+	nurseEmail blank: false
+	nurseOffice blank: false
+	nursePhone blank: false
+	bio size: 10..50
 
     }
 
-// Relationship
-static belongsTo = [surgery:Surgery]
-static hasMany = [doctor:Doctor]
-static hasOne = []
+// Class Diagram Relationships
+	//static belongsTo = [surgery:Surgery]
+	//static hasMany = [doctor:Doctor]
+	//static hasOne = []
 
 }

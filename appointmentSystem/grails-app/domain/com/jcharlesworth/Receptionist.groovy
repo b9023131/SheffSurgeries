@@ -9,14 +9,22 @@ class Receptionist {
 	String recepPassword
 	int recepPhone
 	
-
     static constraints = {
-
+	recepName Blank: false 
+	//recepEmail email: true
+	//recepUsername
+	//recepPassword
+	//recepPhone
 	
     }
-//relationships
-static belongsTo = [surgery:Surgery]
-static hasMany = []
-static hasOne = [] 
 
+//Class Diagram Relationships
+	//static belongsTo = [surgery:Surgery]
+	//static hasMany = []
+	//static hasOne = [] 
+
+
+	//static hasMany = []
+	//static belongsTo = []
+	//static hasOne
 }

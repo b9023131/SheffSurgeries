@@ -6,7 +6,7 @@ class Prescription {
 	String pharmacyName
 	int prescriptionNumber
 	String medicine
-	int totalCost
+	float totalCost
 	Date dateIssued
 	String patientPaying
 
@@ -14,15 +14,21 @@ class Prescription {
 
 // Constraints 
 	pharmacyName Blank:false
-	prescriptionNumber blank:false, unique:false
+	prescriptionNumber blank:false, unique: true
 	medicine blank:false 
-	totalCost blank:false
-	dateIssued blank:false
 	
+	dateIssued blank:false
 
     }
-//relationships
-static hasMany = []
-static belongsTo = []
-static hasOne = [doctor:Doctor, patient:Patient]
+
+//Class Diagram Relationships
+	//static hasMany = []
+	//static belongsTo = []
+	//static hasOne = [doctor:Doctor, patient:Patient]
+
+//Other Relationships
+	//static hasMany = []
+	//static belongsTo = []
+	//static hasOne
+
 }

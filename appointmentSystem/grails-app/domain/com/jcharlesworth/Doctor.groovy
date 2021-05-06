@@ -9,25 +9,25 @@ class Doctor {
 	String doctorEmail 
 	String password
 	String doctorOffice
-	int doctorPhone
+	String doctorPhone
 	String bio
 
     static constraints = {
 
 // Constraints 
-	fullName blank:false  
-	qualification blank:false  
-	position blank:false  
-	doctorEmail email:true, blank:false, unique:true
-	password size: 8..20
-	doctorOffice blank:false
+	fullName blank: false  
+	qualification blank: false  
+	position blank: false  
+	doctorEmail blank: false
+	password size: 8..15
+	doctorOffice blank: false
 	doctorPhone blank: false
-	bio size:20..100
+	bio size: 5..100
 
     }
 
-//Relationship
-static belongsTo = [surgery:Surgery]
-static hasMany = [nurse:Nurse, patient:Patient, appointment:Appointment, prescription:Prescription]
+//Class Diagram Relationships
+	//static belongsTo = [surgery:Surgery]
+	//static hasMany = [nurse:Nurse, patient:Patient, appointment:Appointment, 		//	prescription:Prescription]
 
 }
