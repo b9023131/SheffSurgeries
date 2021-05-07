@@ -5,8 +5,8 @@ class Surgery {
 // Declaring variables
 	String name 
 	String address
-	int postcode
-	int telephone
+	String postcode
+	String telephone
 	int numberOfPatients
 	String description
 	String openingTime 
